@@ -1,6 +1,27 @@
-body{
-    background-color: rgb(224,224,224);
+body {
+  background-color: rgb(224, 224, 224);
 }
-.signOut{
-    display: none;
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 82px;
+  align-items: center;
+}
+.navRight {
+  line-height: 16px;
+}
+.sign {
+  font-size: 10px;
+  text-align: right;
+}
+.help li {
+  display: inline;
+}
+.signOut {
+  display: none;
+}
+.appMenu{
+    background-color: pink;
+    height: 45px;
+
 }
