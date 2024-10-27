@@ -1,5 +1,7 @@
 body {
   background-color: rgb(224, 224, 224);
+  width: 1140px;
+  margin: 0 auto;
 }
 a {
   text-decoration: none;
@@ -26,18 +28,14 @@ nav {
 .appMenu {
   background-color: pink;
   height: 45px;
-  text-align: center;
-  align-content: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.appMenu a {
-  margin: 0 80px;
-}
-
 /*------header-----*/
 .imgBox {
   width: 100%;
   height: 415px;
-  margin: 0 auto;
   display: flex;
 }
 .imgBox img {
@@ -47,38 +45,59 @@ nav {
   overflow: hidden;
 }
 /* -----圖片----- */
-.hot{
+.hot {
   display: grid;
-  grid-template-columns:repeat(3,1fr);
-  grid-template-rows: 36px repeat(2,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 36px repeat(2, 1fr);
   gap: 10px;
-  width: 100%;
+  width: 570px;
+  height: 315px;
 }
-.recommend{
-  width: 100%;
+.recommend {
   grid-column: 1/-1;
   grid-row: 1/2;
-  object-fit: cover;
-
+  width: 570px;
+  
 }
-.recome1{
-  width: 100%;
+.recome1 {
+  width: 190px;
   grid-column: 1/2;
   grid-row: 2/3;
+  overflow: hidden;
+  
 }
-.recome2{
+.recome1 a img{
+  object-fit: cover;
   width: 100%;
-
-  grid-column:2/3;
-  grid-row: 2/3;
 }
-.recome3{
-  width: 100%; 
+.recome2 {
+  width: 190px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  overflow: hidden;
+}
+.recome2 a img{
+  object-fit: cover;
+  width: 100%;
+}
+.recome3 {
+  width: 190px;
   grid-column: 3/4;
   grid-row: 2/3;
 }
-.recome4{
+.recome3 a img{
+  object-fit: cover;
   width: 100%;
+}
+.recome4 {
+  width: 570px;
   grid-column: 1/-1;
   grid-row: 3/4;
+}
+.recome4 a img{
+  object-fit: cover;
+  width: 100%;
+}
+.recommendAndYtvideo {
+  display: flex;
 }
